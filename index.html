@@ -24,7 +24,7 @@
         }
         h1 {
             margin: 20px 0 10px;
-            font-size: 48px;
+            font-size: 40px;
             font-weight: 600;
         }
         p.subtitle {
@@ -36,20 +36,19 @@
             background-image: url('https://images.unsplash.com/photo-1565611883330-5b0b63b69f57?auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            height: 400px;
+            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-            font-size: 36px;
+            font-size: 30px;
             font-weight: bold;
         }
         .content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
-            text-align: center;
         }
         section {
             margin: 40px 0;
@@ -61,9 +60,27 @@
             margin-top: 20px;
         }
         h2 {
-            font-size: 32px;
+            font-size: 28px;
             color: #0055aa;
             margin-bottom: 10px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-box h3 {
+            margin-top: 0;
+            color: #0055aa;
         }
         .contact-info {
             background-color: #f0f0f8;
@@ -104,16 +121,72 @@
 
     <!-- Main Content -->
     <div class="content">
+        <!-- Our Services Section -->
         <section>
             <h2>Our Services</h2>
-            <p>We provide a wide range of interior and exterior mobile detailing services tailored to fit your vehicle's needs.</p>
+            <div class="services">
+                <!-- Interior Service -->
+                <div class="service-box">
+                    <h3>Interior Detailing</h3>
+                    <p><strong>Sedan:</strong> $90</p>
+                    <p><strong>Truck/SUV:</strong> $120</p>
+                    <p><strong>Mini Van/3rd Row SUV:</strong> $150</p>
+                    <p>Includes:</p>
+                    <ul>
+                        <li>Interior vacuum</li>
+                        <li>Spot and stain treatment</li>
+                        <li>Pet hair removal</li>
+                        <li>Interior glass cleaning</li>
+                    </ul>
+                </div>
+
+                <!-- Exterior Service -->
+                <div class="service-box">
+                    <h3>Exterior Detailing</h3>
+                    <p><strong>Sedan:</strong> $70</p>
+                    <p><strong>Truck/SUV:</strong> $90</p>
+                    <p><strong>Mini Van/3rd Row SUV:</strong> $110</p>
+                    <p>Includes:</p>
+                    <ul>
+                        <li>Complete exterior wash</li>
+                        <li>Foam cannon wash</li>
+                        <li>Bug removal</li>
+                        <li>Tire dressing and protection</li>
+                    </ul>
+                </div>
+
+                <!-- Full Detail -->
+                <div class="service-box">
+                    <h3>Full Detail</h3>
+                    <p><strong>Sedan:</strong> $150</p>
+                    <p><strong>Truck/SUV:</strong> $200</p>
+                    <p><strong>Mini Van/3rd Row SUV:</strong> $250</p>
+                    <p>Includes all services from both interior and exterior packages.</p>
+                </div>
+            </div>
+
             <img src="https://images.unsplash.com/photo-1564437712446-a51f2657a678?auto=format&fit=crop&w=1350&q=80" alt="Car Detailing">
         </section>
 
+        <!-- Contact Us Section -->
         <section>
             <h2>Contact Us</h2>
             <p>Phone Number (Call/Text): 972-977-4043</p>
             <p>Website: <a href="https://dripcleaningservices.com">dripcleaningservices.com</a></p>
 
             <div class="contact-info">
-           
+                <h2>Get a Free Estimate Today!</h2>
+                <p>Whether it's a full detail or a quick maintenance program, contact us to get an estimate and schedule your service today!</p>
+                <p><strong>Email: </strong>info@dripcleaningservices.com</p>
+                <p><strong>Call/Text: </strong>972-977-4043</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Drip Cleaning Services. All rights reserved. | <a href="https://dripcleaningservices.com">Visit Our Website</a></p>
+    </footer>
+
+</body>
+</html>
