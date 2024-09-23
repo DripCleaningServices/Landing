@@ -23,6 +23,11 @@
             text-decoration: none;
             font-weight: bold;
         }
+        header img {
+            width: 150px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
         section {
             padding: 2em;
             text-align: center;
@@ -30,6 +35,18 @@
         section h2 {
             color: #004aad;
             margin-bottom: 1.5em;
+        }
+        .images-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .images-section img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         .services {
             display: grid;
@@ -43,11 +60,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
         }
         footer {
             background-color: #333;
@@ -71,39 +83,44 @@
 <body>
 
 <header>
+    <img src="Logo - Transparent.png" alt="Drip Cleaning Services Logo">
     <h1>Drip Cleaning Services</h1>
     <p>Call/text: 972-977-4043 | <a href="mailto:dripcleaningservices24@gmail.com">dripcleaningservices24@gmail.com</a></p>
 </header>
 
 <section>
-    <h2>Our Services</h2>
+    <h2>Our Work in Action</h2>
+    <div class="images-section">
+        <img src="Shine.jpg" alt="Shine Image">
+        <img src="Corvette Foam.jpg" alt="Corvette Foam Image">
+        <img src="BMW Interior.jpg" alt="BMW Interior Image">
+    </div>
+</section>
+
+<section>
+    <h2>Our Services & Pricing</h2>
     <div class="services">
         <div class="service-box">
-            <img src="Shine.jpg" alt="Shine Image">
             <h3>Basic Exterior Detail</h3>
             <p>Hand wash, wheels and tires cleaned, tire shine, exterior windows cleaned, spray wax.</p>
             <p class="price">Cars: $55 | Trucks/SUVs: $75</p>
         </div>
         <div class="service-box">
-            <img src="Corvette Foam.jpg" alt="Foam Cleaning Image">
             <h3>Full Exterior Detail</h3>
             <p>Hand wash, wheels and tires cleaned, tire shine, exterior windows cleaned, clay bar treatment, hand wax.</p>
             <p class="price">Cars: $100 | Trucks/SUVs: $125</p>
         </div>
         <div class="service-box">
-            <img src="BMW Interior.jpg" alt="Interior Detailing Image">
             <h3>Interior Detail</h3>
             <p>Vacuum, dash, center console, windows cleaned, and all interior surfaces wiped down.</p>
             <p class="price">Cars: $80 | Trucks/SUVs: $100</p>
         </div>
         <div class="service-box">
-            <img src="BMW Interior.jpg" alt="Interior Deep Clean Image">
             <h3>Full Interior Deep Clean</h3>
             <p>Interior detail, plus shampoo of seats, carpets, floor mats, doors cleaned and conditioned.</p>
             <p class="price">Cars: $150 | Trucks/SUVs: $200</p>
         </div>
         <div class="service-box">
-            <img src="Shine.jpg" alt="Full Detail Image">
             <h3>Full Detail</h3>
             <p>Includes both full exterior and full interior deep clean services for a comprehensive detailing experience.</p>
             <p class="price">Cars: $250 | Trucks/SUVs: $300</p>
