@@ -21,15 +21,25 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 20px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
+            padding: 20px 0;
             display: flex;
             align-items: center;
         }
 
-        header img {
-            height: 120px; /* Increased size */
+        #branding {
+            float: left;
+        }
+
+        #branding img {
+            height: 150px;
+            margin-left: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #0779e4;
+            margin: 0;
+            padding-left: 20px;
         }
 
         .hero {
@@ -39,21 +49,22 @@
             text-align: center;
         }
 
-        h1, h2, h3 {
+        h2, h3 {
             color: #0779e4;
         }
 
-        .image-gallery {
+        .images-section {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
             padding: 20px 0;
         }
 
-        .image-gallery img {
-            width: 32%; /* Adjusted to fit 3 images side by side */
+        .images-section img {
+            max-width: 30%;
             height: auto;
-            margin-bottom: 15px;
+            border-radius: 8px;
+            margin: 10px;
         }
 
         table {
@@ -90,46 +101,29 @@
         footer a {
             color: #0779e4;
         }
-
-        @media (max-width: 768px) {
-            .image-gallery img {
-                width: 48%; /* Two images per row on smaller screens */
-            }
-
-            header img {
-                height: 90px; /* Slightly smaller for mobile */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .image-gallery img {
-                width: 100%; /* One image per row on very small screens */
-            }
-
-            header img {
-                height: 80px; /* Adjust size for very small screens */
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Logo%20-%20Transparent.png" alt="Drip Cleaning Services Logo">
+        <div id="branding">
+            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Logo%20-%20Transparent.png" alt="Drip Cleaning Services Logo">
+        </div>
+        <h1>Drip Cleaning Services</h1>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Drip Cleaning Services</h1>
-            <p>Mobile Detailing Excellence in Sachse, TX</p>
+            <h2>Mobile Detailing Excellence in Sachse, TX</h2>
+            <p>Providing high-quality, convenient detailing services right at your doorstep.</p>
         </div>
     </section>
 
     <section class="container service-section">
         <h2>Our Work</h2>
-        <div class="image-gallery">
-            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Shine.jpg" alt="Interior Detailing Image">
-            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Corvette%20Foam.jpg" alt="Exterior Detailing Image">
-            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/BMW%20Interior.jpg" alt="BMW Interior Detailing Image">
+        <div class="images-section">
+            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Shine.jpg" alt="Shining Car">
+            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/Corvette%20Foam.jpg" alt="Foam Cleaning">
+            <img src="https://raw.githubusercontent.com/your-username/drip-cleaning/main/BMW%20Interior.jpg" alt="BMW Interior">
         </div>
     </section>
 
