@@ -7,135 +7,256 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
 
         header {
-            text-align: center;
-            background-color: #1f1f1f;
-            padding: 20px;
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
         }
 
-        header img {
-            max-width: 200px;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        #branding {
+            float: left;
+        }
+
+        #branding img {
+            height: 100px;
+        }
+
+        section img {
+            width: auto;
             height: auto;
-        }
-
-        .hero-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 0;
-            background-color: #e6e6e6;
-        }
-
-        .hero-section img {
             max-width: 100%;
-            height: auto;
-            max-height: 400px;
+        }
+
+        .hero {
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #0779e4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0779e4;
+            color: white;
         }
 
         .service-section {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
+            padding: 20px 0;
         }
 
-        .service-section h2 {
-            margin-bottom: 20px;
-        }
-
-        .price-card {
-            display: inline-block;
-            width: 250px;
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 10px;
-            vertical-align: top;
-        }
-
-        .price-card h3 {
-            margin: 0 0 10px;
-        }
-
-        .price-card p {
-            margin: 5px 0;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1f1f1f;
+        footer {
+            background: #333;
             color: #fff;
+            text-align: center;
+            padding: 30px 0;
         }
 
-        .footer a {
-            color: #fff;
-            text-decoration: none;
+        footer a {
+            color: #0779e4;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="your-github-repo-url/Logo%20-%20Transparent.png" alt="Drip Cleaning Services Logo">
+            </div>
+        </div>
+    </header>
 
-<header>
-    <img src="path_to_your_logo/Logo - Transparent.png" alt="Drip Cleaning Services Logo">
-</header>
+    <section class="hero">
+        <div class="container">
+            <h1>Drip Cleaning Services</h1>
+            <p>Mobile Detailing Excellence in Sachse, TX</p>
+        </div>
+    </section>
 
-<!-- Hero Section with Images -->
-<div class="hero-section">
-    <img src="path_to_image/Shine.jpg" alt="Shining Car">
-</div>
-<div class="hero-section">
-    <img src="path_to_image/Corvette Foam.jpg" alt="Corvette with Foam">
-</div>
-<div class="hero-section">
-    <img src="path_to_image/BMW Interior.jpg" alt="BMW Interior">
-</div>
+    <section class="container service-section">
+        <h2>Our Work</h2>
+        <img src="your-github-repo-url/Shine.jpg" alt="Interior Detailing Image">
+        <img src="your-github-repo-url/Corvette%20Foam.jpg" alt="Exterior Detailing Image">
+        <img src="your-github-repo-url/BMW%20Interior.jpg" alt="BMW Interior Detailing Image">
+    </section>
 
-<!-- Services Section with Pricing -->
-<div class="service-section">
-    <h2>Our Services and Pricing</h2>
+    <section class="container service-section">
+        <h2>Services & Pricing</h2>
 
-    <div class="price-card">
-        <h3>Basic Interior Clean</h3>
-        <p>$80 - $150</p>
-        <p>Includes thorough vacuuming, dusting, and cleaning of interior surfaces.</p>
-    </div>
+        <h3>Interior</h3>
+        <table>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>$90</td>
+            </tr>
+            <tr>
+                <td>Truck/SUV</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Mini Van/3rd Row SUV</td>
+                <td>$150</td>
+            </tr>
+        </table>
+        <p>1-2 Hours</p>
+        <ul>
+            <li>All Rubber, Vinyl, and Plastic Surfaces (E.g. Door Panels, Cup Holders, Dash, etc.)</li>
+            <li>Complete Interior Vacuum</li>
+            <li>Spot and Stain Treatment (Extractor Not Required)</li>
+            <li>Pet Hair Removal</li>
+            <li>Interior Glass Cleaning</li>
+            <li>Complete Interior Protection</li>
+        </ul>
 
-    <div class="price-card">
-        <h3>Full Interior Clean</h3>
-        <p>$150 - $250</p>
-        <p>Detailed cleaning including upholstery, carpet shampooing, and surface treatment.</p>
-    </div>
+        <h3>Exterior</h3>
+        <table>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>$70</td>
+            </tr>
+            <tr>
+                <td>Truck/SUV</td>
+                <td>$90</td>
+            </tr>
+            <tr>
+                <td>Mini Van/3rd Row SUV</td>
+                <td>$110</td>
+            </tr>
+        </table>
+        <p>1-2 Hours</p>
+        <ul>
+            <li>Wheel, Tire, Wheel Well Complete Detail</li>
+            <li>Door Jambs</li>
+            <li>Complete Exterior Wash</li>
+            <li>Foam Cannon w/ Hand Wash</li>
+            <li>Bug Removal and Other Contaminants</li>
+            <li>Wheel, Tire, Wheel Well Dressing and Protection</li>
+        </ul>
 
-    <div class="price-card">
-        <h3>Exterior Wash</h3>
-        <p>$70 - $100</p>
-        <p>Hand wash, tire cleaning, and application of a protective wax coating.</p>
-    </div>
+        <h3>Full Detail</h3>
+        <table>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Truck/SUV</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Mini Van/3rd Row SUV</td>
+                <td>$250</td>
+            </tr>
+        </table>
+        <p>2-4 Hours</p>
+        <p>This includes everything within both the Interior and Exterior packages.</p>
 
-    <div class="price-card">
-        <h3>Complete Detail</h3>
-        <p>$250 - $400</p>
-        <p>Full interior and exterior service including deep cleaning and polishing.</p>
-    </div>
+        <h3>Maintenance Program</h3>
+        <h4>Every 4 Weeks</h4>
+        <table>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>$75</td>
+            </tr>
+            <tr>
+                <td>SUV/Truck</td>
+                <td>$105</td>
+            </tr>
+            <tr>
+                <td>Mini Van/3rd Row SUV</td>
+                <td>$120</td>
+            </tr>
+        </table>
+        <h4>Every 8 Weeks</h4>
+        <table>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Sedan</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>SUV/Truck</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Mini Van/3rd Row SUV</td>
+                <td>$160</td>
+            </tr>
+        </table>
 
-    <div class="price-card">
-        <h3>Premium Detail</h3>
-        <p>$450 - $600</p>
-        <p>Comprehensive detailing with paint correction, ceramic coating, and interior restoration.</p>
-    </div>
+        <h3>Add-Ons</h3>
+        <ul>
+            <li>Headlight Restoration: $50</li>
+            <li>Carpet and Upholstery Shampoo: $40 - $80</li>
+            <li>Carpet and Upholstery Protection: $50</li>
+            <li>Leather Cleaning and Conditioning: $40</li>
+            <li>Spot and Stain Treatment (Extractor Required): $60 - $100</li>
+            <li>Clay Bar: $25 - $75</li>
+            <li>Long Term Paint and Glass Protection (Wax/Sealant): $50 - $80</li>
+            <li>Black Trim Dressing and Protection: $25</li>
+            <li>Engine Bay Cleaning: $50</li>
+        </ul>
+    </section>
 
-</div>
-
-<!-- Footer with Contact Info -->
-<div class="footer">
-    <p>Phone: 972-977-4043</p>
-    <p>Email: <a href="mailto:dripcleaningservices24@gmail.com">dripcleaningservices24@gmail.com</a></p>
-</div>
-
+    <footer>
+        <p>Contact us: <a href="mailto:dripcleaningservices24@gmail.com">dripcleaningservices24@gmail.com</a> | Call/Text: 972-977-4043</p>
+        <p>&copy; 2024 Drip Cleaning Services</p>
+    </footer>
 </body>
 </html>
