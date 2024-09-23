@@ -7,130 +7,135 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
         }
+
         header {
-            background-color: #004aad;
-            color: white;
-            padding: 1.5em;
             text-align: center;
+            background-color: #1f1f1f;
+            padding: 20px;
         }
-        header a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+
         header img {
-            width: 150px;
-            display: block;
-            margin: 0 auto 20px auto;
-        }
-        section {
-            padding: 2em;
-            text-align: center;
-        }
-        section h2 {
-            color: #004aad;
-            margin-bottom: 1.5em;
-        }
-        .images-section {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .images-section img {
-            max-width: 400px;
-            width: 100%;
+            max-width: 200px;
             height: auto;
-            border-radius: 8px;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            background-color: #e6e6e6;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+
+        .service-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .service-section h2 {
             margin-bottom: 20px;
         }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+
+        .price-card {
+            display: inline-block;
+            width: 250px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
             padding: 20px;
+            margin: 10px;
+            vertical-align: top;
         }
-        .service-box {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
+
+        .price-card h3 {
+            margin: 0 0 10px;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1em;
+
+        .price-card p {
+            margin: 5px 0;
+        }
+
+        .footer {
             text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #fff;
         }
-        footer a {
-            color: white;
+
+        .footer a {
+            color: #fff;
             text-decoration: none;
-        }
-        p {
-            margin-bottom: 0.5em;
-        }
-        .price {
-            color: #004aad;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="Logo - Transparent.png" alt="Drip Cleaning Services Logo">
-    <h1>Drip Cleaning Services</h1>
-    <p>Call/text: 972-977-4043 | <a href="mailto:dripcleaningservices24@gmail.com">dripcleaningservices24@gmail.com</a></p>
+    <img src="path_to_your_logo/Logo - Transparent.png" alt="Drip Cleaning Services Logo">
 </header>
 
-<section>
-    <h2>Our Work in Action</h2>
-    <div class="images-section">
-        <img src="Shine.jpg" alt="Shine Image">
-        <img src="Corvette Foam.jpg" alt="Corvette Foam Image">
-        <img src="BMW Interior.jpg" alt="BMW Interior Image">
-    </div>
-</section>
+<!-- Hero Section with Images -->
+<div class="hero-section">
+    <img src="path_to_image/Shine.jpg" alt="Shining Car">
+</div>
+<div class="hero-section">
+    <img src="path_to_image/Corvette Foam.jpg" alt="Corvette with Foam">
+</div>
+<div class="hero-section">
+    <img src="path_to_image/BMW Interior.jpg" alt="BMW Interior">
+</div>
 
-<section>
-    <h2>Our Services & Pricing</h2>
-    <div class="services">
-        <div class="service-box">
-            <h3>Basic Exterior Detail</h3>
-            <p>Hand wash, wheels and tires cleaned, tire shine, exterior windows cleaned, spray wax.</p>
-            <p class="price">Cars: $55 | Trucks/SUVs: $75</p>
-        </div>
-        <div class="service-box">
-            <h3>Full Exterior Detail</h3>
-            <p>Hand wash, wheels and tires cleaned, tire shine, exterior windows cleaned, clay bar treatment, hand wax.</p>
-            <p class="price">Cars: $100 | Trucks/SUVs: $125</p>
-        </div>
-        <div class="service-box">
-            <h3>Interior Detail</h3>
-            <p>Vacuum, dash, center console, windows cleaned, and all interior surfaces wiped down.</p>
-            <p class="price">Cars: $80 | Trucks/SUVs: $100</p>
-        </div>
-        <div class="service-box">
-            <h3>Full Interior Deep Clean</h3>
-            <p>Interior detail, plus shampoo of seats, carpets, floor mats, doors cleaned and conditioned.</p>
-            <p class="price">Cars: $150 | Trucks/SUVs: $200</p>
-        </div>
-        <div class="service-box">
-            <h3>Full Detail</h3>
-            <p>Includes both full exterior and full interior deep clean services for a comprehensive detailing experience.</p>
-            <p class="price">Cars: $250 | Trucks/SUVs: $300</p>
-        </div>
-    </div>
-</section>
+<!-- Services Section with Pricing -->
+<div class="service-section">
+    <h2>Our Services and Pricing</h2>
 
-<footer>
-    <p>&copy; 2024 Drip Cleaning Services | <a href="mailto:dripcleaningservices24@gmail.com">Contact Us</a></p>
-</footer>
+    <div class="price-card">
+        <h3>Basic Interior Clean</h3>
+        <p>$80 - $150</p>
+        <p>Includes thorough vacuuming, dusting, and cleaning of interior surfaces.</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Full Interior Clean</h3>
+        <p>$150 - $250</p>
+        <p>Detailed cleaning including upholstery, carpet shampooing, and surface treatment.</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Exterior Wash</h3>
+        <p>$70 - $100</p>
+        <p>Hand wash, tire cleaning, and application of a protective wax coating.</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Complete Detail</h3>
+        <p>$250 - $400</p>
+        <p>Full interior and exterior service including deep cleaning and polishing.</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Premium Detail</h3>
+        <p>$450 - $600</p>
+        <p>Comprehensive detailing with paint correction, ceramic coating, and interior restoration.</p>
+    </div>
+
+</div>
+
+<!-- Footer with Contact Info -->
+<div class="footer">
+    <p>Phone: 972-977-4043</p>
+    <p>Email: <a href="mailto:dripcleaningservices24@gmail.com">dripcleaningservices24@gmail.com</a></p>
+</div>
 
 </body>
 </html>
